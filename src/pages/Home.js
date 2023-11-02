@@ -1,5 +1,8 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
+import BlogCard from "../components/BlogCard";
+import ProductCard from "../components/ProductCard";
 
 const Home = () => {
   return (
@@ -145,8 +148,153 @@ const Home = () => {
       </section>
 
       <section className="home-wrapper-2 py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="categories d-flex justify-content-between flex-wrap align-items-center">
+                <div className="d-flex gap-30 align-items-center">
+                  <div>
+                    <h6>Smart televison</h6>
+                    <p>12 Items</p>
+                  </div>
+                  <img src="images/camera.jpg" alt="camera" />
+                </div>
+
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>smartwatches</h6>
+                    <p>13 Items</p>
+                  </div>
+                  <img src="images/TV.jpg" alt="camera" />
+                </div>
+
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>music & gaming </h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/camera.jpg" alt="camera" />
+                </div>
+
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>prortable speaker</h6>
+                    <p>8 Items</p>
+                  </div>
+                  <img src="images/camera.jpg" alt="camera" />
+                </div>
+
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>prortable speaker</h6>
+                    <p>8 Items</p>
+                  </div>
+                  <img src="images/camera.jpg" alt="camera" />
+                </div>
+
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>Accessories</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/camera.jpg" alt="camera" />
+                </div>
+
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>prortable speaker</h6>
+                    <p>8 Items</p>
+                  </div>
+                  <img src="images/camera.jpg" alt="camera" />
+                </div>
+
+                <div className="d-flex gap align-items-center">
+                  <div>
+                    <h6>Home Appliances</h6>
+                    <p>6 Items</p>
+                  </div>
+                  <img src="images/camera.jpg" alt="camera" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<section className="blog-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className=" row">
+            <div className="col-12">
+              <h3 className="section-heading">featured Collection</h3>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            
+          </div>
+        </div>
+      </section>
+      <section className="marque-wrapper home-wrapper-2 py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className=" col-12">
+              <div className="marquee-inner-wrapper bg-white card-wrapper">
+                <Marquee className="d-flex">
+                  <div className="mx-4 w-25">
+                    <img
+                      src="//demo-digitic.myshopify.com/cdn/shop/files/brand-01_131x119@2x.png?v=1655725508"
+                      alt="brand"
+                    />
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img
+                      src="https://demo-digitic.myshopify.com/cdn/shop/files/brand-02_131x119@2x.png?v=1655725508"
+                      alt="brand"
+                    />
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img src="images/brand-03.png" alt="brand" />
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img src="images/brand-04.png" alt="brand" />
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img src="images/brand-05.png" alt="brand" />
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img src="images/brand-06.png" alt="brand" />
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img src="images/brand-07.png" alt="brand" />
+                  </div>
+                  <div className="mx-4 w-25">
+                    <img src="images/brand-08.png" alt="brand" />
+                  </div>
+                </Marquee>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
+      
+
+
+
+
+      <section className="blog-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className=" row">
+            <div className="col-12">
+              <h3 className="section-heading">Our Latest Blogs</h3>
+            </div>
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+          </div>
+        </div>
+      </section>
     </>
   );
 };
