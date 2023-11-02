@@ -3,6 +3,7 @@ import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
 import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
+import SpecialProduct from "../components/SpecialProduct";
 
 const Home = () => {
   return (
@@ -220,7 +221,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-<section className="blog-wrapper py-5 home-wrapper-2">
+      <section className="featured-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className=" row">
             <div className="col-12">
@@ -230,10 +231,94 @@ const Home = () => {
             <ProductCard />
             <ProductCard />
             <ProductCard />
-            
           </div>
         </div>
       </section>
+      <section className="famous-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img
+                  src="https://demo-digitic.myshopify.com/cdn/shop/files/subbanner-01.jpg?v=1655701528" className="img-fluid"
+                  alt=""
+                />
+                <div className="famous-content position-absolute">
+                  <h5>Big Screen</h5>
+                  <h6> Smart watch series 7</h6>
+                  <p>From $399or $16.62/mo. for 24 mo.*</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="https://demo-digitic.myshopify.com/cdn/shop/files/subbanner-02.jpg?v=1654920168 " className="img-fluid" alt="" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Studio display</h5>
+                  <h6 className="text-dark"> 600 nit or brightness</h6>
+                  <p className="text-dark">27inch 5k retina display</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="https://demo-digitic.myshopify.com/cdn/shop/files/subbanner-03.jpg?v=1654920181 " className="img-fluid" alt="" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Studio display</h5>
+                  <h6 className="text-dark"> 600 nit or brightness</h6>
+                  <p className="text-dark">27inch 5k retina display</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="https://demo-digitic.myshopify.com/cdn/shop/files/subbanner-04.jpg?v=1654920192 " className="img-fluid" alt="" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Studio display</h5>
+                  <h6 className="text-dark"> 600 nit or brightness</h6>
+                  <p className="text-dark">27inch 5k retina display</p>
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+      </section>
+
+      <section className="special-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Special product</h3>
+            </div>
+          </div>
+          <div className="row">
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+          </div>
+        </div>
+      </section>
+      <section className="popular-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className=" row">
+            <div className="col-12">
+              <h3 className="section-heading">Our popular products</h3>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+
       <section className="marque-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
@@ -276,11 +361,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      
-
-
-
 
       <section className="blog-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
