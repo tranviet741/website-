@@ -16,27 +16,27 @@ const SingleProduct = () => {
           </div>
         </div>
       </div>
-            
-            <div className="description-wrapper py-5 home-wrapper-2">
-                <div className="container-xxl">
-                    <div className="row">
-                        <div className="col-12">
-                        <h4>Description</h4>
-                            <p className="bg-white p-3">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolore laboriosam magnam quam cumque harum non doloribus dicta, quo, impedit obcaecati voluptas ea aut tempora exercitationem odio nemo repellat mollitia?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
+      <div className="description-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h4>Description</h4>
+              <p className="bg-white p-3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates dolore laboriosam magnam quam cumque harum non
+                doloribus dicta, quo, impedit obcaecati voluptas ea aut tempora
+                exercitationem odio nemo repellat mollitia?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section className="reviews-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12">
-
-            </div>
+            <div className="col-12"></div>
           </div>
         </div>
       </section>

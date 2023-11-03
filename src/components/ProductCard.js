@@ -7,7 +7,7 @@ const ProductCard = (props) => {
   let location = useLocation();
   console.log(location);
   return (
-    <>
+    <> 
       <div
         className={` ${location.pathname == "/store" ? `gr-${gird}` : "col-3"}`}
       >
