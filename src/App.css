@@ -267,6 +267,7 @@ footer .input-group-text {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
 }
 .product-card .product-image > img:last-child {
   display: none;
@@ -293,6 +294,10 @@ footer .input-group-text {
 .product-card .product-details p .price {
   font-size: 16px;
   color: var(--color-1c1c1b);
+}
+.product-card p.description{
+  font-size: 13px;
+  color: var(--color-777777);
 }
 .action-bar {
   top: 10%;
@@ -411,4 +416,109 @@ footer .input-group-text {
   background-color: white;
   border-radius: 10px;
 }
+.gird img{
+  width: 35px;
+  height: 35px;
+  background-color: #f2f2f2;
+  padding: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.gr-12{
+  width: 100%;
+}
+.gr-6{
+  width: 49%;
+}
+.gr-4{
+  width: 32%;
+}
+.gr-3{
+  width: 24%;
+}
+.gr-12 .product-card{
+  display: flex;
+  gap: 20px;
+}
+.gr-6 .product-image{
+  width: 100%;
+}
+.gr-6 .product-image img{
+  margin: auto;
+  display: block;
+}
+
+
+
+.gr-12 .product-card .product-image{
+  width: 270px;
+}
+.gr-12 .action-bar{
+  top: 17%;
+}
+
 /* Our store and*/
+/* contact page */
+.contact-inner-wrapper{
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-color: white;
+  gap: 15px;
+}
+.contact-inner-wrapper >div{
+  width: 48%;
+
+}
+.contact-title{
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+  /* margin-top: 0; */
+
+}
+.contact-inner-wrapper form .form-control:focus{
+  background-color: var(--color-f5f5f7);
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 10px;
+}
+.contact-inner-wrapper ul{
+  list-style: none;
+}
+/* contact page end */
+/* compare product */
+
+.compare-product-card{
+  padding: 20px 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.compare-product-card .cross{
+  top:15px;
+  right:15px;
+  width: 20px;
+  padding: 3px;
+  cursor: pointer;
+}
+.compare-product-detail h5 .title{
+  font-size:  15px; ;
+  line-height:22px ;
+  font-weight: 500;
+  color: var(--color1c1c1b);
+}
+.compare-product-detail h6.price{
+  font-size:  15px; ;
+  line-height:22px ;
+  font-weight: 400;
+}
+
+.compare-product-card .product-detail{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+/* compare product end*/

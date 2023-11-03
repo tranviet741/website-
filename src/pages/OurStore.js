@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState }  from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import ReactStars from "react-rating-stars-component";
+import ProductCard from "../components/ProductCard";
+import Color from "../components/Color";
+// import { useState } from "react";
 
 const OurStore = () => {
+    const[gird, setGrid] = useState(4);
+    //  alert(gird);
   return (
     <>
       <Meta title={"Our Store"} />
@@ -79,18 +84,7 @@ const OurStore = () => {
                 <h5 className="sub-title"> Colors</h5>
 
                 <div>
-                  <ul className="colors ps-0">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
+                  <Color/>
                 </div>
 
                 <h5 className="sub-title"> size</h5>
@@ -227,10 +221,10 @@ const OurStore = () => {
             </div>
 
             <div className="col-9">
-              <div className="filter-sort-grid">
+              <div className="filter-sort-grid mb-4">
                 <div className="d-flex justify-content-between align-items-center">
                   <div className="d-flex align-items-center gap-10">
-                    <p className="mb-0 d-block"> Sort by:</p>
+                    <p className="mb-0 d-block" style={{width:"100px"}}> Sort by:</p>
                     <select name="" className="form-control form-select" id="">
                       <option value="manual">Featured</option>
                       <option value="best-selling" selected="selected">
@@ -256,11 +250,27 @@ const OurStore = () => {
                       </option>
                     </select>
                   </div>
-                  <div className="d-flex align-items-center gap-10">
-                    <p className="totalproducts">21 product</p>
-                    <div className="d-flex"> </div>
+                  <div className="d-flex align-items-center gap-10 ">
+                    <p className="totalproducts  d-flex align-items-center ">21 products</p>
+                    <div className="d-flex gap-10 align-items-center gird">
+                        <img 
+                        onClick={() => {setGrid(3);}} src=" images/gr4.svg" className="d-block img-fluid " alt="grid" />
+                        <img 
+                        onClick={() => {setGrid(4);}} src=" images/gr3.svg"  className="d-block img-fluid " alt="grid" />
+                        <img 
+                        onClick={() => {setGrid(6);}} src=" images/gr2.svg" className="d-block img-fluid " alt="grid" />
+                        <img 
+                        onClick={() => {setGrid(12);}} src=" images/gr.svg"  className="d-block img-fluid " alt="grid" />
+                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="product-list pb-5">
+              <div className="d-flex gap-2 flex-wrap">
+                <ProductCard gird={gird}/>
+              </div>
+                
+
               </div>
             </div>
           </div>
