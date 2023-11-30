@@ -1,17 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
 
 const ProductCard = (props) => {
   const { gird } = props;
+  const [cart, setCart] = useState([]);
+
   let location = useLocation();
   console.log(location);
+  const addToCart = () => {
+    
+    const product = {
+      id: 1, 
+      name: "abcbabâssss", 
+      price: 100000.0, 
+    };
+
+    // Add the product to the cart
+    setCart((prevCart) => [...prevCart, product]);
+  };
+
   return (
-    <> 
+    <>
+      {/* sp1 */}
       <div
         className={` ${location.pathname == "/store" ? `gr-${gird}` : "col-3"}`}
       >
-        <Link to='product/:id' className="product-card position-relative">
+        <Link to="product/:id" className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
               <img src="images/wish.svg" alt="wishlist" />
@@ -41,7 +56,9 @@ const ProductCard = (props) => {
                 value="3"
                 edit="false"
               />
-              <p className={`description ${gird === 12 ? "d-block" : "d-none"}`}>
+              <p
+                className={`description ${gird === 12 ? "d-block" : "d-none"}`}
+              >
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium voluptatum deleniti atque corrupti quos
                 dolores et quas molestias excepturi sint occaecati cupiditate
@@ -60,14 +77,17 @@ const ProductCard = (props) => {
                 <img src="images/view.svg" alt=" view" />
               </Link>
 
-              <Link>
+              <Link onClick={addToCart}>
                 <img src="images/add-cart.svg" alt=" add-cart" />
               </Link>
+              {/* <Link>
+                <img src="images/add-cart.svg"  alt=" add-cart" />
+              </Link> */}
             </div>
           </div>
         </Link>
       </div>
-
+      {/* sp 2 */}
       <div
         className={` ${location.pathname == "/store" ? `gr-${gird}` : "col-3"}`}
       >
@@ -101,7 +121,9 @@ const ProductCard = (props) => {
                 value="3"
                 edit="false"
               />
-              <p className={`description ${gird === 12 ? "d-block" : "d-none"}`}>
+              <p
+                className={`description ${gird === 12 ? "d-block" : "d-none"}`}
+              >
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium voluptatum deleniti atque corrupti quos
                 dolores et quas molestias excepturi sint occaecati cupiditate
@@ -119,7 +141,7 @@ const ProductCard = (props) => {
               <Link>
                 <img src="images/view.svg" alt=" view" />
               </Link>
-
+              {/* add sp ở đây */}
               <Link>
                 <img src="images/add-cart.svg" alt=" add-cart" />
               </Link>

@@ -9,6 +9,7 @@ import OurStore from "./pages/OurStore";
 import Blog from "./pages/Blog";
 import CompareProduct from "./pages/CompareProduct";
 import SingleProduct from "./pages/SingleProduct";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
             <Route path="About" element={<About />} />
             <Route path="store" element={<OurStore />} />
             <Route path="store/product/:id" element={<SingleProduct/>}/>
+            <Route path="cart" element={<Cart/>}/> 
+            {/* <Route path="store" element={<OurStore cart={cart} />} /> */}
+
             <Route path="blogs" element={<Blog />} />
             <Route path="contact" element={<Contact />} />
             <Route path="compare-product" element={<CompareProduct />} />
